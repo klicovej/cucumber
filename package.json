@@ -1,0 +1,34 @@
+{
+  "name": "cucumber",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint .",
+    "detox:build": "detox build --configuration android",
+    "detox:test:android": "DETOX_CONFIGURATION=android npx cucumber-js"
+  },
+  "dependencies": {
+    "react": "17.0.2",
+    "react-native": "0.67.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/register": "^7.17.7",
+    "@babel/runtime": "^7.17.8",
+    "@cucumber/cucumber": "^7.3.2",
+    "@react-native-community/eslint-config": "^3.0.1",
+    "babel-jest": "^27.5.1",
+    "detox": "18.16.0",
+    "eslint": "^8.12.0",
+    "jest": "^27.5.1",
+    "metro-react-native-babel-preset": "^0.69.1",
+    "react-test-renderer": "17.0.2"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
